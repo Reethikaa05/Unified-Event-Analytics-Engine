@@ -1,0 +1,51 @@
+{
+  "name": "unified-analytics-engine",
+  "version": "1.0.0",
+  "description": "Scalable backend API for website and mobile app analytics",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest --forceExit",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "docker:dev": "docker-compose up -d",
+    "docker:prod": "docker-compose -f docker-compose.prod.yml up -d",
+    "docker:stop": "docker-compose down"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-rate-limit": "^6.11.2",
+    "express-validator": "^7.3.0",
+    "geoip-lite": "^1.4.10",
+    "helmet": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "4.1",
+    "mongoose": "^7.8.7",
+    "morgan": "^1.10.1",
+    "node-cron": "^3.0.3",
+    "redis": "^4.7.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "user-agents": "^1.1.669",
+    "winston": "^3.18.3"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  },
+  "keywords": [
+    "analytics",
+    "api",
+    "events",
+    "tracking",
+    "metrics"
+  ],
+  "author": "Reethika Selvam S",
+  "license": "MIT"
+}
